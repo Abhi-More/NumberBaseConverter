@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    
+    background-size: cover;
+    background-image: radial-gradient( circle 1259px at 2.8% 48.8%,  rgba(255,243,110,0.2) 0%, rgba(30,204,214,0.2) 45.6%, rgb(5, 134, 154, 0.2) 65.9% );
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.card-1{
+    margin: 0.8rem auto;
+}
+.card-1 h3{
+    margin: 1rem auto;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS';
+    font-weight: bold;
+    color: black;
+}
+.card{
+    text-align: left;
+    width: 600px;
+    padding: 10px 2.5rem;
+
+    background-image: linear-gradient( 60deg,  rgba(254,122,152,0.61) 17.7%, rgba(255,206,134,0.8) 64.7%, rgba(172,253,163,0.44) 112.1% );
+
+    /* box-shadow: 8px 8px 8px 8px rgb(61, 85, 93); */
+    border: 1px solid black;
+    box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.label{
+    margin: 15px auto 8px auto;
+    font-weight: 700;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS';
+}
+#in, #out{
+    width: 400px;
+    height: 40px;
+}
+
+button{
+    width: 10rem;
+    background-image: linear-gradient(to right, #000000 0%, #53346D 51%, #000000 100%);
+    color: white;
+    margin: auto 2rem;
+}
+
+button:hover {
+    background-image: linear-gradient(to right, #000000 0%, #000000 51%, #000000 100%);
+}
+
+.buttons{
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#copyright{
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 600px) {
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button{
+        width: 10rem;
+        margin: 10px auto;
+    }
+
+    .card{
+        width: 100%;
+        margin: 20px;
+        padding: 10px 1rem;
+    }
+  }
